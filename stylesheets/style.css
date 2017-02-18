@@ -53,6 +53,9 @@ h2 {
 
 #joinButton:focus {
 	outline: none;
+	background-color: #555555;
+    color: #E0FFFF;
+    border-color: #555555;
 }
 
 /* Hide HTML5 Up and Down arrows. */
@@ -67,5 +70,6 @@ input[type="number"] {
 
 #hi {
 	display: none;
+	font-size: 50px;
 }
 

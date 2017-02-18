@@ -13,19 +13,28 @@
 
 <body>
 	
-		<h1>Welcome to Qiwi!</h1>
+		<h1>Welcome to Ripple!</h1>
         <h2 id="prompt">Enter the 4-digit code:</h2>
 
         <div id="content">
         	<div id="code">
-	        	<form> 
-		        	<input class="num" oninput="limitInput(this);" type = "number" maxlength = "1"/>
-		        	<input class="num" oninput="limitInput(this);" type = "number" maxlength = "1"/>
-		        	<input class="num" oninput="limitInput(this);" type = "number" maxlength = "1"/>
-		        	<input class="num" oninput="limitInput(this);" type = "number" maxlength = "1"/>  
+	        	<form id="passcode_input"> 
+
+		        	<input id="first" class="num" oninput="limitInput(this);" 
+		        			type = "number" maxlength = "1" onkeyup="jump_to_2(this)" />
+
+		        	<input id="second" class="num" oninput="limitInput(this);" 
+		        			type = "number" maxlength = "1" onkeyup="jump_to_3(this)"/>
+
+		        	<input id="third" class="num" oninput="limitInput(this);" 
+		        			type = "number" maxlength = "1" onkeyup="jump_to_4(this)"/>
+
+		        	<input id="fourth" class="num" oninput="limitInput(this);" 
+		        			type = "number" maxlength = "1" onkeyup="jump_to_button(this)"/>  
+
 	        	</form>
-	        	<button id="joinButton" type="button"> Join Room! </button>
-	        	<p id="hi"> Ryan sucks lul </p>
+	        	<button id="joinButton" type="button"> Join the Party! </button>
+	        	<p id="hi"> Ryan Huang -1 Peer Review </p>
 	        </div>
 
 	        <div id="numpad">
